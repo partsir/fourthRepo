@@ -1,0 +1,18 @@
+Make a folder 'HELLO'.Create a file add.java and write the following:
+public class add{
+  public static void main (String[] args){
+    int first = 10;
+    int second = 20;
+    int sum = first + second;
+    System.out.println(first + "+" + second + "=" + sum);
+
+  }
+}
+
+Run it on VS Code.
+
+In jenkins free style project under the advanced option click on custom workspace and copy the path of folder.
+
+Under build steps select executable windows batch command and write 
+javac add.java
+java add
