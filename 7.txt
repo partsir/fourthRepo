@@ -1,0 +1,11 @@
+docker pull ubuntu
+
+docker run -it --name my_ubuntu ubuntu /bin/bash
+echo "This is an example file created within a Docker container" > example.txt
+exit
+
+docker commit container_id my_ubuntu_updated
+
+docker tag my_ubuntu_updated yourusername/my_ubuntu_updated
+
+docker push yourusername/my_ubuntu_updated
